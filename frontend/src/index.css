@@ -48,24 +48,36 @@ body {
 
 /* Navbar */
 .navbar {
-  background-color: #356859; /* softer forest green */
+  background-color: #356859; /* soft forest green */
   color: #FAF7F0;
-  padding: 1rem 2rem;
+  padding: 1rem 2rem; /* good balance */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* slightly stronger shadow */
+  font-family: 'Book Antiqua', serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar h1 {
+  font-size: 1.8rem; /* a bit bigger, bold, cozy */
+  margin: 0;
 }
 
 .navbar a {
   color: #FAF7F0;
-  margin-left: 1rem;
+  margin-left: 1.5rem; /* slightly more spacing */
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.05rem; /* slightly bigger and readable */
+  transition: color 0.3s, transform 0.2s;
 }
 
 .navbar a:hover {
   color: #D9C9B6; /* soft beige accent */
+  transform: scale(1.05); /* small hover pop effect */
 }
 
 /* Container */

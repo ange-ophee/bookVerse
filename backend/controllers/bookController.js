@@ -8,13 +8,14 @@ exports.getBooks = async (req, res) => {
 };
 
 exports.addBook = async (req, res) => {
-  const { title, author, summary } = req.body;
+  const { title, author, summary, coverImage  } = req.body;
 
   const book = await Book.create({
     title,
     author,
     summary,
     addedBy: req.user._id,
+    coverImage,
   });
 
   res.status(201).json(book);

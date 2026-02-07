@@ -7,6 +7,7 @@ const bookSchema = new mongoose.Schema(
     summary: String,
     coverImage: String,
     addedBy: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
+    coverImage: { type: String, default: '' },
   },
   { timestamps: true }
 );
