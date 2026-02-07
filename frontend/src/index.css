@@ -1,0 +1,153 @@
+/* Global styles */
+body {
+  font-family: 'Georgia', serif;
+  background-color: #FAF7F0; /* cream */
+  color: #6B4C3B; /* muted brown */
+  margin: 0;
+  padding: 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #356859;
+  border-left: 5px solid #356859;
+  padding-left: 1rem;
+}
+
+.hero {
+  background: 
+    linear-gradient(
+      rgba(24, 34, 28, 0.6),
+      rgba(24, 34, 28, 0.6)
+    ),
+    url("https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 2rem;
+  color: #FAF7F0;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #356859; /* softer forest green */
+  color: #FAF7F0;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.navbar a {
+  color: #FAF7F0;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #D9C9B6; /* soft beige accent */
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Book cards grid */
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Book card */
+.book-card {
+  background-color: #D9C9B6; /* soft beige card */
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+}
+
+.book-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #356859; /* forest green header */
+}
+
+.book-card p {
+  margin: 0.3rem 0;
+  color: #6B4C3B; /* muted brown text */
+}
+
+/* Button */
+.btn {
+  background-color: #356859;
+  color: #FAF7F0;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 1rem;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #2A5343; /* darker, softer hover green */
+}
+
+/* Forms */
+.form {
+  background-color: #FAF7F0;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  max-width: 500px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form input,
+.form textarea {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #6B4C3B;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.form textarea {
+  resize: vertical;
+}
